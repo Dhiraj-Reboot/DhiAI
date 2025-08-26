@@ -76,6 +76,8 @@ const Chatbox = () => {
 
       {messages.map((message,index)=> <Message key={index} message={message} /> )}
 
+
+
       {/* Three Dots Loading */}
       {
         loading && <div className='loader flex items-center gap-1.5'>
