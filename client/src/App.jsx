@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SideBar from './components/SideBar'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import Chatbox from './components/Chatbox'
+// import Chatbox from './components/Chatbox'
 import Credits from './pages/Credits'
 import Community from './pages/Community'
 import { assets } from './assets/assets'
@@ -10,6 +10,7 @@ import Loading from './pages/Loading'
 import { useAppContext } from './context/AppContext'
 import Login from './pages/Login'
 import {Toaster} from 'react-hot-toast'
+import Chatbox from './components/ChatBox'
 const App = () => {
   const {user,loadingUser} = useAppContext()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
